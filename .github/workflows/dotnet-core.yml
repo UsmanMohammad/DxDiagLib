@@ -20,6 +20,6 @@ jobs:
     - name: Change to DxDiag.Core directory
       run: cd ./dotnet/DxDiag.Core/
     - name: Install dependencies
-      run: dotnet restore
+      run: dotnet restore ./DxDiag.Core.csproj
     - name: Build
       run: dotnet pack --configuration Release --no-restore -o out
